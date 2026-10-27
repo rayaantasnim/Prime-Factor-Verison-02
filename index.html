@@ -1,0 +1,1315 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Prime-Factor.app V2.0 — Global Launch & Protocol Blueprint</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Standard SEO Meta Tags -->
+    <meta
+      name="description"
+      content="The definitive competitive speed-mathematics infrastructure. Experience a 12-tier rank isolation architecture, zero-lifeline high-tier locks, and HMAC-verified gameplay."
+    />
+    <meta
+      name="keywords"
+      content="Prime-Factor, speed mathematics, prime decomposition, ELO ranking, cryptography, mental math tournament, Rayaan Tasnim"
+    />
+    <meta name="author" content="Rayaan Tasnim, Olympiad Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://rayaantasnim.github.io/Prime-Factorization-Web/index.html"
+    />
+    <meta
+      property="og:title"
+      content="Prime-Factor.app V2.0 — Global Launch & Protocol Blueprint"
+    />
+    <meta
+      property="og:description"
+      content="The definitive competitive speed-mathematics infrastructure. Built on asymmetric ELO range firewalls, 12-tier prime decomposition strata, and cryptographically verified telemetry."
+    />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/39190814/pexels-photo-39190814.jpeg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Prime-Factor.app V2.0 Interface and 12-Tier Rank Matrix Overview"
+    />
+    <meta property="og:site_name" content="Prime-Factor.app" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://rayaantasnim.github.io/Prime-Factorization-Web/index.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Prime-Factor.app V2.0 — Global Launch & Protocol Blueprint"
+    />
+    <meta
+      name="twitter:description"
+      content="Unveiling the 12-tier rank isolation architecture and HMAC-signed gameplay engine. Witness the evolution of competitive speed mathematics."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.pexels.com/photos/39190814/pexels-photo-39190814.jpeg"
+    />
+
+    <!-- Google Fonts & Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP & ScrollTrigger Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="design.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-sans text-slate-100 antialiased selection:bg-cyberCyan selection:text-slateDark min-h-screen flex flex-col justify-between"
+  >
+    <!-- ========================================== -->
+    <!-- NAVIGATION ARCHITECTURE & OVERLAY DRAWER  -->
+    <!-- ========================================== -->
+    <nav
+      class="fixed top-0 left-0 w-full z-40 bg-slateDark/95 backdrop-blur-xl border-b border-cyberCyan/30 px-4 sm:px-6 py-3 sm:py-4 shadow-2xl shadow-cyberCyan/10 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center gap-2">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+          <div
+            class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-cyberCyan via-indigo-600 to-cyberPurple flex items-center justify-center font-heading font-bold text-white text-xl sm:text-2xl neon-glow-cyan group-hover:scale-105 transition-transform"
+          >
+            π
+          </div>
+          <div>
+            <span
+              class="font-heading font-bold text-base sm:text-xl tracking-wider text-white text-glow-cyan"
+              >Prime-Factor<span class="text-cyberCyan">.app</span></span
+            >
+            <span
+              class="block text-[9px] sm:text-[10px] font-mono tracking-widest text-emerald-400 uppercase font-semibold leading-tight"
+              >V2.0 Core Protocol</span
+            >
+          </div>
+        </a>
+
+        <!-- Control Actions: Hover-Activated Scroll Trigger & Navigation Hamburger -->
+        <div class="flex items-center gap-2 sm:gap-4">
+          <!-- Hover-Activated Y-Axis Horizontal Scroll Toggle Button -->
+          <button
+            id="lifoDrawerBtn"
+            aria-label="Open LIFO Audit Stack"
+            class="h-9 sm:h-11 px-2.5 sm:px-4 rounded-xl bg-slateMid border border-cyberCyan/40 text-cyberCyan flex items-center gap-2 hover:bg-cyberCyan hover:text-slateDark neon-glow-cyan transition-all text-xs sm:text-sm font-mono font-semibold"
+          >
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span class="hidden md:inline">LIFO Stack</span>
+            <span
+              id="lifoBadgeCount"
+              class="w-5 h-5 rounded-full bg-cyberCyan text-slateDark font-bold text-[10px] flex items-center justify-center ml-0.5"
+              >3</span
+            >
+          </button>
+
+          <!-- Navigation Drawer Menu Toggle -->
+          <button
+            id="hamburgerBtn"
+            aria-label="Toggle Menu"
+            class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-slateMid border border-cyberCyan/40 text-cyberCyan flex items-center justify-center hover:bg-cyberCyan hover:text-slateDark neon-glow-cyan transition-all"
+          >
+            <i class="fa-solid fa-bars text-base sm:text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Full-Screen Sliding Navigation Overlay Drawer -->
+    <div
+      id="navOverlay"
+      class="fixed inset-0 z-50 pointer-events-none overflow-hidden"
+    >
+      <!-- Backdrop -->
+      <div
+        id="navBackdrop"
+        class="absolute inset-0 bg-slateDark/90 backdrop-blur-md opacity-0 transition-opacity duration-300"
+      ></div>
+
+      <!-- Sliding Responsive Nav Panel -->
+      <div
+        id="navDrawer"
+        class="nav-drawer absolute top-0 right-0 w-full max-w-sm sm:max-w-md h-full bg-[#0B1120] text-white p-6 sm:p-8 shadow-2xl flex flex-col justify-between translate-x-full pointer-events-auto border-l border-cyberCyan/30 neon-glow-cyan overflow-y-auto"
+      >
+        <div>
+          <!-- Header -->
+          <div
+            class="flex justify-between items-center pb-6 border-b border-slate-800"
+          >
+            <span
+              class="font-mono text-xs tracking-widest text-cyberCyan uppercase font-bold"
+              >Navigation Node</span
+            >
+            <button
+              id="closeNavBtn"
+              aria-label="Close Navigation"
+              class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-800 hover:bg-cyberCrimson hover:text-white flex items-center justify-center text-slate-300 neon-glow-crimson transition-all"
+            >
+              <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+          </div>
+
+          <!-- Navigation Target Links -->
+          <div class="mt-6 sm:mt-8 flex flex-col gap-4 sm:gap-6">
+            <a
+              href="#hero"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >01. Launch Countdown</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+            <a
+              href="#manifesto"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >02. Executive Verdict</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+            <a
+              href="#philosophy"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >03. Cognitive Philosophy</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+            <a
+              href="#rank-matrix"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >04. 12-Tier Rank Matrix</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+            <a
+              href="#scoring"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >05. Operational Scoring</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+            <a
+              href="#friday-clash"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >06. Friday Clash Circuit</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+            <a
+              href="#core-features"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >07. V2.0 Engine Features</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+            <a
+              href="#security"
+              class="nav-link text-lg sm:text-2xl font-heading font-semibold text-slate-200 hover:text-cyberCyan transition-colors flex items-center justify-between group py-1"
+            >
+              <span class="group-hover:translate-x-2 transition-transform"
+                >08. Security Charter</span
+              >
+              <i class="fa-solid fa-chevron-right text-xs text-cyberCyan"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Details -->
+        <div class="pt-6 border-t border-slate-800 mt-6">
+          <div class="text-[11px] sm:text-xs font-mono text-slate-300">
+            LAUNCH TARGET: OCT 28, 2026
+          </div>
+          <div
+            class="text-[11px] sm:text-xs font-mono text-cyberCyan mt-1 font-bold"
+          >
+            HMAC SHA-256 SIGNED BLUEPRINT
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================================= -->
+    <!-- RIGHT OVERLAY NAVIGATION SYSTEM WITH FULL OPACITY & RESPONSIVE HIGH-READABILITY STACK      -->
+    <!-- ========================================================================================= -->
+    <div
+      id="lifoDrawer"
+      class="fixed top-0 right-0 w-full md:w-[680px] lg:w-[780px] h-full bg-[#0B1120] opacity-100 border-l-2 border-cyberCyan/60 z-50 p-4 sm:p-6 shadow-2xl translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between neon-glow-cyan pointer-events-auto"
+    >
+      <!-- Header Controls -->
+      <div
+        class="flex justify-between items-center pb-4 border-b border-slate-800 shrink-0"
+      >
+        <div>
+          <h3
+            class="font-heading font-bold text-white text-lg sm:text-2xl flex items-center gap-2 text-glow-cyan"
+          >
+            <i class="fa-solid fa-clock-rotate-left text-cyberCyan"></i> LIFO
+            Audit Stack
+          </h3>
+          <p
+            class="text-[10px] sm:text-xs font-mono text-slate-300 mt-1 font-medium hidden xs:block"
+          >
+            Hover on desktop or swipe horizontally to navigate stack logs
+          </p>
+        </div>
+        <button
+          id="closeLifoBtn"
+          aria-label="Close Audit Drawer"
+          class="w-9 h-9 rounded-full bg-slate-800 hover:bg-cyberCrimson flex items-center justify-center text-slate-200 transition-colors border border-slate-700"
+        >
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <!-- Dynamic Overlay Core: Vertical Layout with Hover-Activated Horizontal Scroll Conversion System -->
+      <div
+        id="scrollViewport"
+        class="my-4 flex-1 overflow-x-auto overflow-y-hidden md:overflow-y-auto no-scrollbar md:custom-scrollbar overlay-scroll-container transition-all"
+      >
+        <div
+          id="lifoStackContainer"
+          class="flex md:flex-col gap-3.5 min-h-[220px] md:min-h-0 items-stretch md:items-none"
+        >
+          <!-- JavaScript Dynamically Populates fully opaque audit log items here -->
+        </div>
+      </div>
+
+      <!-- Navigation System Interactive Indicators & Pop Operation Actions -->
+      <div
+        class="pt-4 border-t border-slate-800 shrink-0 flex flex-col sm:flex-row gap-3 items-center justify-between bg-[#0B1120]"
+      >
+        <div
+          class="flex items-center gap-2 text-[10px] sm:text-xs font-mono text-cyberCyan font-semibold"
+        >
+          <span
+            class="inline-block w-2.5 h-2.5 rounded-full bg-cyberCyan animate-ping"
+          ></span>
+          <span>HOVER-ACTIVATED Y-AXIS HORIZONTAL SCROLL ENGINE READY</span>
+        </div>
+        <button
+          id="clearLifoBtn"
+          class="w-full sm:w-auto px-6 py-3 bg-slate-900 hover:bg-cyberCrimson/30 hover:text-white text-cyberCrimson font-mono text-xs rounded-xl transition-all border border-cyberCrimson/60 neon-glow-crimson font-bold text-center tracking-wider"
+        >
+          POP TOP AUDIT ENTRY
+        </button>
+      </div>
+    </div>
+
+    <main class="flex-1">
+      <!-- ========================================== -->
+      <!-- SECTION 01: HERO COUNTDOWN GATE           -->
+      <!-- ========================================== -->
+      <section
+        id="hero"
+        class="relative min-h-[90vh] sm:min-h-screen pt-24 sm:pt-28 pb-12 sm:pb-16 flex items-center justify-center bg-overlay-math text-white"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10">
+          <div
+            class="inline-flex items-center gap-2 px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full bg-slateDark/90 border border-cyberCyan text-cyberCyan text-[10px] sm:text-xs font-mono font-bold tracking-wider uppercase mb-4 sm:mb-6 neon-glow-cyan animate-pulse max-w-full overflow-hidden text-ellipsis whitespace-nowrap"
+          >
+            <i class="fa-solid fa-shield-halved shrink-0"></i>
+            <span>Protocol Genesis &bull; Deployment Target Oct 28, 2026</span>
+          </div>
+
+          <h1
+            class="text-3xl xs:text-4xl sm:text-6xl md:text-7xl font-heading font-extrabold tracking-tight text-white mb-4 sm:mb-6 uppercase text-glow-cyan leading-tight"
+          >
+            Prime-Factor<span class="text-cyberCyan">.app</span> V2.0
+          </h1>
+          <p
+            class="max-w-3xl mx-auto text-sm sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-light drop-shadow-md px-2"
+          >
+            The definitive competitive speed-mathematics infrastructure. Built
+            on asymmetric ELO range firewalls, 12-tier prime decomposition
+            strata, and cryptographically verified telemetry.
+          </p>
+
+          <!-- LIVE COUNTDOWN TICKER GRID -->
+          <div
+            class="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto mb-8 sm:mb-12"
+          >
+            <div
+              class="glass-panel-dark p-4 sm:p-6 rounded-2xl border border-cyberCyan/40 neon-glow-cyan"
+            >
+              <div
+                id="days"
+                class="text-2xl sm:text-4xl md:text-5xl font-mono font-bold text-cyberCyan text-glow-cyan"
+              >
+                00
+              </div>
+              <div
+                class="text-[10px] sm:text-xs font-mono text-slate-300 uppercase tracking-widest mt-1 font-semibold"
+              >
+                Days
+              </div>
+            </div>
+            <div
+              class="glass-panel-dark p-4 sm:p-6 rounded-2xl border border-cyberCyan/40 neon-glow-cyan"
+            >
+              <div
+                id="hours"
+                class="text-2xl sm:text-4xl md:text-5xl font-mono font-bold text-cyberCyan text-glow-cyan"
+              >
+                00
+              </div>
+              <div
+                class="text-[10px] sm:text-xs font-mono text-slate-300 uppercase tracking-widest mt-1 font-semibold"
+              >
+                Hours
+              </div>
+            </div>
+            <div
+              class="glass-panel-dark p-4 sm:p-6 rounded-2xl border border-cyberCyan/40 neon-glow-cyan"
+            >
+              <div
+                id="minutes"
+                class="text-2xl sm:text-4xl md:text-5xl font-mono font-bold text-cyberCyan text-glow-cyan"
+              >
+                00
+              </div>
+              <div
+                class="text-[10px] sm:text-xs font-mono text-slate-300 uppercase tracking-widest mt-1 font-semibold"
+              >
+                Minutes
+              </div>
+            </div>
+            <div
+              class="glass-panel-dark p-4 sm:p-6 rounded-2xl border border-cyberCrimson/50 neon-glow-crimson"
+            >
+              <div
+                id="seconds"
+                class="text-2xl sm:text-4xl md:text-5xl font-mono font-bold text-cyberCrimson"
+              >
+                00
+              </div>
+              <div
+                class="text-[10px] sm:text-xs font-mono text-slate-300 uppercase tracking-widest mt-1 font-semibold"
+              >
+                Seconds
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Triggers -->
+          <div
+            class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 px-4"
+          >
+            <a
+              href="#rank-matrix"
+              class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-gradient-to-r from-cyberCyan to-blue-600 text-slateDark font-heading font-bold text-base sm:text-lg hover:brightness-125 transition-all shadow-xl neon-glow-cyan flex items-center justify-center"
+            >
+              Explore Rank Matrix
+              <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            </a>
+            <a
+              href="#philosophy"
+              class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-heading font-bold text-base sm:text-lg border border-purple-500/50 neon-glow-purple transition-all flex items-center justify-center"
+            >
+              Read Philosophy
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 02: EXECUTIVE VERDICT & MANIFESTO  -->
+      <!-- ========================================== -->
+      <section id="manifesto" class="py-16 sm:py-24 bg-canvas relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+          <div
+            class="glass-panel p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-cyberCyan/40 neon-glow-cyan relative mt-4"
+          >
+            <div
+              class="absolute -top-4 sm:-top-5 left-4 sm:left-10 px-3 sm:px-5 py-1 sm:py-1.5 bg-slateDark text-cyberCyan text-[10px] sm:text-xs font-mono rounded-full font-bold uppercase tracking-widest border border-cyberCyan neon-glow-cyan"
+            >
+              Executive Charter &bull; Olympiad Edge
+            </div>
+
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-4 sm:mb-6 mt-2 text-glow-cyan"
+            >
+              Architectural Mandate for V2.0
+            </h2>
+
+            <div
+              class="space-y-4 sm:space-y-5 text-slate-200 leading-relaxed text-sm sm:text-base md:text-lg text-justify"
+            >
+              <p>
+                In Version 1.0, Prime-Factor established the viability of
+                real-time prime factor decomposition as a competitive sport.
+                However, empirical telemetry revealed vulnerabilities: rating
+                inflation at upper echelons, trivial point-farming via
+                micro-inputs, and client-side memory inspection.
+              </p>
+              <p
+                class="font-semibold text-white border-l-2 sm:border-l-4 text-justify border-cyberCyan pl-3 sm:pl-4 py-2 bg-slate-900/60 rounded-r-xl text-xs sm:text-base"
+              >
+                "Version 2.0 is not an update—it is an absolute system
+                recalculation. We have instituted a 12-tier rank isolation
+                architecture, zero-lifeline high-tier locks, and HMAC payload
+                validation."
+              </p>
+              <p class="text-justify">
+                Every calculation made on Prime-Factor V2.0 is evaluated under
+                millisecond precision. Ratings represent true computational
+                cognitive velocity, protected from decay evasion and client
+                tampering.
+              </p>
+            </div>
+
+            <!-- Signoff Block -->
+            <div
+              class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-slate-700/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
+            >
+              <div>
+                <div
+                  class="font-heading font-bold text-white text-base sm:text-lg"
+                >
+                  Rayaan Tasnim
+                </div>
+                <div class="text-[11px] sm:text-xs font-mono text-cyberCyan">
+                  Chief Protocol Architect & Senior Olympiad Edge Analyst
+                </div>
+              </div>
+              <div
+                class="text-[10px] sm:text-xs font-mono text-emerald-400 bg-slate-900 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl border border-emerald-500/40 neon-glow-mint w-full sm:w-auto text-center"
+              >
+                HMAC Verification ID: #PF-V2-2026-OCT28
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 03: THE COGNITIVE PHILOSOPHY        -->
+      <!-- ========================================== -->
+      <section
+        id="philosophy"
+        class="py-16 sm:py-24 bg-overlay-abstract text-white relative"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+            <span
+              class="text-cyberCyan font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest text-glow-cyan"
+              >Pedagogical Framework</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mt-1 sm:mt-2"
+            >
+              The Cognitive Philosophy
+            </h2>
+            <p class="text-slate-300 mt-2 sm:mt-4 text-sm sm:text-lg">
+              How Prime-Factor V2.0 retrains the human mind for sub-second
+              algorithmic number theory recognition.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+            <!-- Pillar 1 -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl card-3d border-t-4 border-t-cyberCyan neon-glow-cyan"
+            >
+              <div
+                class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-cyan-950 text-cyberCyan flex items-center justify-center text-xl sm:text-2xl mb-4 sm:mb-6 neon-glow-cyan"
+              >
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2 sm:mb-3"
+              >
+                Mental Sieve Conditioning
+              </h3>
+              <p
+                class="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify"
+              >
+                By forcing rapid trial-division elimination of small primes (2,
+                3, 5, 7, 11), competitors develop intuitive residue class
+                recognition, drastically collapsing search space before
+                consciously computing.
+              </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl card-3d border-t-4 border-t-cyberPurple neon-glow-purple"
+            >
+              <div
+                class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-purple-950 text-cyberPurple flex items-center justify-center text-xl sm:text-2xl mb-4 sm:mb-6 neon-glow-purple"
+              >
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2 sm:mb-3"
+              >
+                Modular Reflex Loops
+              </h3>
+              <p
+                class="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify"
+              >
+                Iterative speed sessions condition the motor-cognitive path.
+                Competitors learn to execute modulo operations as visual pattern
+                matches rather than multi-step arithmetic divisions.
+              </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl card-3d border-t-4 border-t-cyberMint neon-glow-mint sm:col-span-2 md:col-span-1"
+            >
+              <div
+                class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-emerald-950 text-cyberMint flex items-center justify-center text-xl sm:text-2xl mb-4 sm:mb-6 neon-glow-mint"
+              >
+                <i class="fa-solid fa-shield-cat"></i>
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2 sm:mb-3"
+              >
+                Stress-Induced Accuracy
+              </h3>
+              <p
+                class="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify"
+              >
+                Under accelerated timer pressure and penalty multipliers, the
+                brain shifts from speculative guessing to rigorous
+                verification—forging extreme precision under competitive
+                cognitive load.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 04: OFFICIAL 12-TIER RANK MATRIX   -->
+      <!-- ========================================== -->
+      <section
+        id="rank-matrix"
+        class="py-16 sm:py-24 bg-slateDark text-white relative"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+            <span
+              class="text-cyberCyan font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest text-glow-cyan"
+              >Competitive Hierarchy</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mt-1 sm:mt-2"
+            >
+              Official 12-Tier Rank Matrix
+            </h2>
+            <p class="text-slate-300 mt-2 sm:mt-4 text-sm sm:text-lg">
+              Asymmetric range firewalls protect elite strata while offering
+              structured progression from Initiate to Prime Singularity.
+            </p>
+          </div>
+
+          <!-- 12 Tier Responsive Grid -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+          >
+            <!-- Tier 1 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-amber-400 neon-glow-gold card-3d"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">👑</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-amber-400/20 text-amber-400 font-mono text-[11px] sm:text-xs font-bold border border-amber-400/50"
+                  >ELO 3000+</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-amber-400 font-semibold uppercase"
+              >
+                Tier 1
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2 text-glow-gold"
+              >
+                Prime Singularity
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Apex cognitive computing bracket restricted to unrated practice
+                to eliminate trivial point-farming.
+              </p>
+            </div>
+
+            <!-- Tier 2 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-purple-500 neon-glow-purple card-3d"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">♾️</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-purple-500/20 text-purple-300 font-mono text-[11px] sm:text-xs font-bold border border-purple-500/50"
+                  >ELO 2700 - 2999</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-purple-400 font-semibold uppercase"
+              >
+                Tier 2
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2 text-glow-purple"
+              >
+                Riemann Transcendentalist
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Strata locked from low-tier rated play, forcing matches into
+                virtual unrated simulations.
+              </p>
+            </div>
+
+            <!-- Tier 3 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-cyberCyan neon-glow-cyan card-3d"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">⚡</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-cyan-500/20 text-cyberCyan font-mono text-[11px] sm:text-xs font-bold border border-cyan-500/50"
+                  >ELO 2400 - 2699</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-cyberCyan font-semibold uppercase"
+              >
+                Tier 3
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2 text-glow-cyan"
+              >
+                Canonical Analyst
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Elite echelon demonstrating exceptional structural prime
+                decomposition precision under accelerated time constraints.
+              </p>
+            </div>
+
+            <!-- Tier 4 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-blue-500 hover:border-blue-400 transition-all card-3d"
+              style="box-shadow: 0 0 20px rgba(59, 130, 246, 0.2)"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">🔐</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-300 font-mono text-[11px] sm:text-xs font-bold border border-blue-500/50"
+                  >ELO 2200 - 2399</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-blue-400 font-semibold uppercase"
+              >
+                Tier 4
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Gaussian Cryptographer
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Advanced tier thriving on decoding complex, encryption-grade
+                integer fields and trick inputs.
+              </p>
+            </div>
+
+            <!-- Tier 5 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-indigo-500 hover:border-indigo-400 transition-all card-3d"
+              style="box-shadow: 0 0 20px rgba(99, 102, 241, 0.2)"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">📐</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-indigo-500/20 text-indigo-300 font-mono text-[11px] sm:text-xs font-bold border border-indigo-500/50"
+                  >ELO 2000 - 2199</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-indigo-400 font-semibold uppercase"
+              >
+                Tier 5
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Eulerian Sentinel
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Watchful guardian tier reflecting disciplined pacing and steady,
+                modular arithmetic accuracy.
+              </p>
+            </div>
+
+            <!-- Tier 6 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-emerald-500 neon-glow-mint card-3d"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">📈</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[11px] sm:text-xs font-bold border border-emerald-500/50"
+                  >ELO 1800 - 1999</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-emerald-400 font-semibold uppercase"
+              >
+                Tier 6
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Logarithmic Vector
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Core milestone tier where historical ledger audits and rating
+                inactivity decay protocols activate.
+              </p>
+            </div>
+
+            <!-- Tier 7 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-teal-500 hover:border-teal-400 transition-all card-3d"
+              style="box-shadow: 0 0 20px rgba(20, 184, 166, 0.2)"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">🔍</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-teal-500/20 text-teal-300 font-mono text-[11px] sm:text-xs font-bold border border-teal-500/50"
+                  >ELO 1600 - 1799</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-teal-400 font-semibold uppercase"
+              >
+                Tier 7
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Prime Strategist
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Tactical division relying on calculated risk-taking and adaptive
+                lifeline resource management.
+              </p>
+            </div>
+
+            <!-- Tier 8 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-sky-500 hover:border-sky-400 transition-all card-3d"
+              style="box-shadow: 0 0 20px rgba(14, 165, 233, 0.2)"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">⚙️</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-sky-500/20 text-sky-300 font-mono text-[11px] sm:text-xs font-bold border border-sky-500/50"
+                  >ELO 1400 - 1599</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-sky-400 font-semibold uppercase"
+              >
+                Tier 8
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Modular Operator
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Competitor displaying growing fluency across textbook prime
+                fields and standard number fields.
+              </p>
+            </div>
+
+            <!-- Tier 9 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-yellow-600 hover:border-yellow-500 transition-all card-3d"
+              style="box-shadow: 0 0 20px rgba(202, 138, 4, 0.2)"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">🎓</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-yellow-600/20 text-yellow-300 font-mono text-[11px] sm:text-xs font-bold border border-yellow-600/50"
+                  >ELO 1200 - 1399</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-yellow-400 font-semibold uppercase"
+              >
+                Tier 9
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Radix Scholar
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Academic level focused on consolidating a strong theoretical
+                base and sharpening 3-digit divisor skills.
+              </p>
+            </div>
+
+            <!-- Tier 10 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-orange-500 hover:border-orange-400 transition-all card-3d"
+              style="box-shadow: 0 0 20px rgba(249, 115, 22, 0.2)"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">🧮</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-orange-500/20 text-orange-300 font-mono text-[11px] sm:text-xs font-bold border border-orange-500/50"
+                  >ELO 900 - 1199</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-orange-400 font-semibold uppercase"
+              >
+                Tier 10
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Sieve Calibrator
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Standard competitive baseline emphasizing structural consistency
+                and sieve-based prime detection techniques.
+              </p>
+            </div>
+
+            <!-- Tier 11 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-stone-400 hover:border-stone-300 transition-all card-3d"
+              style="box-shadow: 0 0 20px rgba(168, 162, 158, 0.2)"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">🧩</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-stone-400/20 text-stone-300 font-mono text-[11px] sm:text-xs font-bold border border-stone-400/50"
+                  >ELO 500 - 899</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-stone-400 font-semibold uppercase"
+              >
+                Tier 11
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Composite Apprentice
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                The official entry-level onboarding floor initialized
+                automatically for all new browser profiles.
+              </p>
+            </div>
+
+            <!-- Tier 12 -->
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border-l-4 border-l-red-600 neon-glow-crimson card-3d"
+            >
+              <div class="flex justify-between items-start mb-3 sm:mb-4">
+                <span class="text-2xl sm:text-3xl">🪵</span>
+                <span
+                  class="px-2.5 py-1 rounded bg-red-600/20 text-red-300 font-mono text-[11px] sm:text-xs font-bold border border-red-600/50"
+                  >ELO 0 - 499</span
+                >
+              </div>
+              <div
+                class="text-[10px] font-mono text-red-400 font-semibold uppercase"
+              >
+                Tier 12
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Foundry Initiate
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Absolute technical bottom serving as a stabilizing safety buffer
+                for losing streaks or security liquidations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 05: OPERATIONAL SCORING ARCHITECTURE-->
+      <!-- ========================================== -->
+      <section id="scoring" class="py-16 sm:py-24 bg-canvas relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+            <span
+              class="text-cyberCyan font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest text-glow-cyan"
+              >Calculated Precision</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mt-1 sm:mt-2"
+            >
+              Operational Scoring Architecture
+            </h2>
+            <p class="text-slate-300 mt-2 sm:mt-4 text-sm sm:text-lg">
+              Dynamic points distribution based on solve latency, attempt
+              clean-sheet, and integer magnitude.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+            <!-- Direct Clears -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-emerald-500/40 neon-glow-mint"
+            >
+              <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div
+                  class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-emerald-950 text-emerald-400 flex items-center justify-center text-xl sm:text-2xl font-bold neon-glow-mint shrink-0"
+                >
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                  <h3
+                    class="font-heading font-bold text-xl sm:text-2xl text-white"
+                  >
+                    First-Attempt Clears
+                  </h3>
+                  <span
+                    class="text-[11px] sm:text-xs font-mono text-emerald-400 font-bold"
+                    >100% Multiplier Yield</span
+                  >
+                </div>
+              </div>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Submitting an accurate factorization on the initial attempt
+                yields full base points plus the speed streak bonus:
+              </p>
+              <div
+                class="bg-slate-950 text-emerald-400 font-mono text-[11px] sm:text-xs p-3 sm:p-4 rounded-xl border border-emerald-500/30 overflow-x-auto"
+              >
+                Score = BasePoints * (1.0 + (MaxTime - SolveTime) / MaxTime) *
+                StreakMultiplier
+              </div>
+            </div>
+
+            <!-- Overtime & Penalty -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl sm:rounded-3xl border border-amber-500/40 neon-glow-gold"
+            >
+              <div class="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div
+                  class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-amber-950 text-amber-400 flex items-center justify-center text-xl sm:text-2xl font-bold neon-glow-gold shrink-0"
+                >
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div>
+                  <h3
+                    class="font-heading font-bold text-xl sm:text-2xl text-white"
+                  >
+                    Overtime & Penalty Triplets
+                  </h3>
+                  <span
+                    class="text-[11px] sm:text-xs font-mono text-amber-400 font-bold"
+                    >-35% Deduction Per Failed Submission</span
+                  >
+                </div>
+              </div>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                Incorrect factor inputs trigger penalty triplets. Three
+                consecutive miscalculations instantly forfeit the round:
+              </p>
+              <div
+                class="bg-slate-950 text-amber-400 font-mono text-[11px] sm:text-xs p-3 sm:p-4 rounded-xl border border-amber-500/30 overflow-x-auto"
+              >
+                Penalty = -35% BasePoints | 3 Errors = Instant Round Liquidation
+                & ELO Penalty
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 06: GLOBAL FRIDAY CLASH CIRCUIT   -->
+      <!-- ========================================== -->
+      <section
+        id="friday-clash"
+        class="py-16 sm:py-24 bg-overlay-tech text-white relative"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <span
+            class="px-4 sm:px-5 py-1.5 sm:py-2 rounded-full bg-cyberCrimson/20 border border-cyberCrimson text-cyberCrimson font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest inline-block mb-4 neon-glow-crimson"
+          >
+            Weekly Tournament Event
+          </span>
+          <h2
+            class="text-3xl sm:text-5xl md:text-6xl font-heading font-bold text-white mb-4 sm:mb-6 uppercase text-glow-cyan"
+          >
+            Friday Clash Championship Circuit
+          </h2>
+          <p
+            class="max-w-3xl mx-auto text-slate-200 text-sm sm:text-lg mb-8 sm:mb-12 leading-relaxed"
+          >
+            Locked at 17:00 UTC every Friday. Zero-lifeline showdowns where
+            competitors across all 12 tiers battle in synchronized elimination
+            brackets.
+          </p>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto"
+          >
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border border-cyberCyan/40 text-center neon-glow-cyan card-3d"
+            >
+              <i
+                class="fa-solid fa-clock text-cyberCyan text-2xl sm:text-3xl mb-2 sm:mb-3 text-glow-cyan"
+              ></i>
+              <h4
+                class="font-heading font-bold text-base sm:text-lg text-white"
+              >
+                17:00 UTC Prompt
+              </h4>
+              <p class="text-slate-300 text-[11px] sm:text-xs mt-1">
+                Global server sync without delay buffers
+              </p>
+            </div>
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border border-cyberCrimson/50 text-center neon-glow-crimson card-3d"
+            >
+              <i
+                class="fa-solid fa-ban text-cyberCrimson text-2xl sm:text-3xl mb-2 sm:mb-3"
+              ></i>
+              <h4
+                class="font-heading font-bold text-base sm:text-lg text-white"
+              >
+                Zero Lifelines
+              </h4>
+              <p class="text-slate-300 text-[11px] sm:text-xs mt-1">
+                No Fermat hints or undo stack active
+              </p>
+            </div>
+            <div
+              class="glass-panel-dark p-5 sm:p-6 rounded-2xl border border-amber-500/50 text-center neon-glow-gold card-3d"
+            >
+              <i
+                class="fa-solid fa-trophy text-amber-400 text-2xl sm:text-3xl mb-2 sm:mb-3 text-glow-gold"
+              ></i>
+              <h4
+                class="font-heading font-bold text-base sm:text-lg text-white"
+              >
+                Double ELO Weight
+              </h4>
+              <p class="text-slate-300 text-[11px] sm:text-xs mt-1">
+                2.0x rating multiplier applied to results
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 07: V2.0 ENGINE FEATURE BREAKDOWN  -->
+      <!-- ========================================== -->
+      <section id="core-features" class="py-16 sm:py-24 bg-canvas relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+            <span
+              class="text-cyberCyan font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest text-glow-cyan"
+              >Protocol Innovations</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mt-1 sm:mt-2"
+            >
+              V2.0 Core Feature Engine
+            </h2>
+          </div>
+
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl border border-cyberCyan/40 card-3d neon-glow-cyan"
+            >
+              <div
+                class="text-cyberCyan text-2xl sm:text-3xl mb-3 sm:mb-4 text-glow-cyan"
+              >
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                LIFO Audit Stack
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Last-In, First-Out calculation history tracking every
+                factorization step in real-time, allowing instant telemetry
+                inspection.
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl border border-cyberPurple/40 card-3d neon-glow-purple"
+            >
+              <div
+                class="text-cyberPurple text-2xl sm:text-3xl mb-3 sm:mb-4 text-glow-purple"
+              >
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Fermat Clue Blocker
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Automatically disables hint lifelines for ELO &gt;= 1800,
+                enforcing pure unassisted mental prime factorization.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div
+              class="glass-panel p-6 sm:p-8 rounded-2xl border border-cyberCrimson/40 card-3d neon-glow-crimson sm:col-span-2 md:col-span-1"
+            >
+              <div class="text-cyberCrimson text-2xl sm:text-3xl mb-3 sm:mb-4">
+                <i class="fa-solid fa-gavel"></i>
+              </div>
+              <h3
+                class="font-heading font-bold text-lg sm:text-xl text-white mb-2"
+              >
+                Refresh Offense Hammer
+              </h3>
+              <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Browser refresh during active matches triggers an immediate
+                forfeit, deducting 45 ELO points to prevent task dodging.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 08: SECURITY CHARTER               -->
+      <!-- ========================================== -->
+      <section
+        id="security"
+        class="py-16 sm:py-24 bg-slateDark text-white relative"
+      >
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+          <div
+            class="glass-panel-dark p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border border-cyberCyan/40 neon-glow-cyan"
+          >
+            <div class="flex items-center gap-3 mb-4 sm:mb-6 text-cyberCyan">
+              <i
+                class="fa-solid fa-shield-cat text-2xl sm:text-3xl text-glow-cyan"
+              ></i>
+              <h2
+                class="text-2xl sm:text-3xl font-heading font-bold text-white uppercase text-glow-cyan"
+              >
+                HMAC Fingerprint Shield
+              </h2>
+            </div>
+            <p
+              class="text-slate-200 leading-relaxed text-xs sm:text-base md:text-lg mb-6"
+            >
+              To maintain absolute integrity across all 12 rank tiers,
+              Prime-Factor V2.0 signs every keystroke packet using HMAC SHA-256
+              client tokens. Bot attempts, automated solver scripts, or timing
+              anomalies are flagged and result in immediate profile liquidation
+              to Tier 12.
+            </p>
+            <div
+              class="p-3 sm:p-4 bg-slate-950 rounded-xl font-mono text-[10px] sm:text-xs text-cyberCyan border border-cyberCyan/40 overflow-x-auto neon-glow-cyan"
+            >
+              <code
+                >HMAC_SHA256(payload: { matchId: "PF-8890", solvedInMs: 412,
+                Prime-Factors: [17, 19] }, secret: SHARED_KEY)</code
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER ARCHITECTURE                       -->
+    <!-- ========================================== -->
+    <footer
+      class="bg-slate-950 text-slate-400 py-8 sm:py-12 border-t border-cyberCyan/30 font-mono text-[11px] sm:text-xs"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="w-7 h-7 sm:w-8 sm:h-8 rounded bg-cyberCyan flex items-center justify-center font-heading font-bold text-slateDark text-base sm:text-lg neon-glow-cyan"
+          >
+            π
+          </div>
+          <span class="text-white font-bold"
+            >Prime-Factor.app &bull; V2.0 LAUNCH ARCHITECTURE &bull; 2026</span
+          >
+        </div>
+        <div>
+          Authored by
+          <span class="text-cyberCyan font-semibold">Olympiad Edge</span> |
+          Authorized by
+          <span class="text-white font-semibold">Rayaan Tasnim</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT LOGIC & GSAP ANIMATIONS        -->
+    <!-- ========================================== -->
+    <script src="script.js"></script>
+  </body>
+</html>
